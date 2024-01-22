@@ -1,4 +1,4 @@
 # Ignore all PDF files
 *.pdf
 # Except for main.pdf
-!main.pdf
+!nikipedia.pdf

@@ -12,6 +12,7 @@
   set list(tight: false)
   set block(above: 1em, below: 1.5em)
   set bibliography(style: "apa")
+  set math.equation(numbering: "(1)")
 
   // Show commands for Headings
   show heading.where(level: 1): it => {
@@ -43,7 +44,9 @@
   v(2fr)
   text(size: 4em, weight: 700, title)
   v(1fr)
-  text(size: 1em, weight: 400, author)
+  text(size: 1em, weight: 700, author)
+  linebreak()
+  datetime.today().display("[month repr:long] [day], [year]")
   v(1fr)
   pagebreak()
 

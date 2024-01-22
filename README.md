@@ -2,13 +2,10 @@
 
 Paper summaries written in Typst.
 
-Currently summarizes the following papers
+Currently summarizing the following papers:
 
-- **Direct Preference Optimization: Your Language Model is Secretly a Reward
-  Model**  
-  Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher D.
-  Manning, Chelsea Finn  
-  https://arxiv.org/abs/2305.18290
+- [[arXiv:2305.18920]](https://arxiv.org/abs/2305.18290) Direct Preference
+  Optimization
 
 # License
 
