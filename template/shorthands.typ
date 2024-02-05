@@ -2,8 +2,9 @@
 #let bx = math.bold("x")
 #let bz = math.bold("z")
 #let bw = math.bold("w")
+#let cL = math.cal("L")
 
-#let dkl = $D_"KL"$
+#let DKL = $D_"KL"$
 
 // Equation Helpers
 // #let eqnum = math.equation.with(block: true, numbering: "(1)")

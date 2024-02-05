@@ -18,16 +18,32 @@ applies to larger models with billions of parameters.
 === Regularization
 
 Regularization is the practise of adding additional error terms in the loss.
-Popular choices are L1 regularization, which adds an additional penalty $|bw|$ to
-the loss term. Another choice is the L2 regularization, which adds a square term $|bw|^2$ to
-the loss. Here $bw$ represents the weights of the network. Essentially we are
-trying to prevent any one of these weights from blowing up.
+Popular choices are L1 regularization, which adds an additional penalty $|bw|$
+to the loss term. Another choice is the L2 regularization, which adds a square
+term $|bw|^2$ to the loss. Here $bw$ represents the weights of the network.
+Essentially we are trying to prevent any one of these weights from blowing up.
 
 Often times, fitting a model to a dataset is an ill posed problem. This means
 that there may be more than one solutions to the problem, perhaps due to the
 number of parameters of the model being more than the number of data points
 available. In these cases, regularization can be seen as a way to introduce
 additional constraints in order to get the desired solution.
+
+=== Likelihood
+
+The likelihood is the probability of the observed data as a function of the
+model parameters.
+
+$ cL(theta) = p(x; theta) $
+
+The difference between likelihood and probability is subtle. When the model
+parameters $theta$ are fixed, this notation represents the density function
+whereas when the data $x$ is fixed, this represents the likelihood. In other
+words, given a known model $theta$, the probability of observing some unknown
+data $x$ is the density whereas the probability of observing known data $x$ when
+we are still searching for the model parameters $theta$ is the likelihood.
+
+=== Maximum Likelihood Estination
 
 === Bayes' Rule
 
@@ -48,23 +64,8 @@ _"posterior is prior times likelihood"_.
 
 $ "Posterior" = "Prior" times "Likelihood" / "Evidence" $
 
-@bishop2006pattern is a really good reference for Bayesian Methods and machine
-learning in general.
-
-=== Likelihood
-
-The likelihood is the probability of the observed data as a function of the
-model parameters.
-
-$ p(x; theta) $
-
-This notation is slightly different from the density function $p(x|theta)$ where $theta$ is
-a random variable that is being conditioned on.
-
-This is a slight difference from the notion of a probability density, where the
-formulation is the same, except that when $theta$ is fixed, the function can be
-viewed as a PDF whereas when $x$ is fixed, the function can be viewed as a
-likelihood function.
+@bishop2006pattern is a good reference for Bayesian Methods and machine learning
+in general.
 
 == Large Language Models
 
